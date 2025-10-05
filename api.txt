@@ -1,0 +1,27 @@
+BASE_URL = https://api.spoonacular.com
+API_KEY = 0da1254b26a8471d8352a4b86113f87e
+
+## Searchbar Autocomplete (shows 5 matching results)
+{BASE_URL}/recipes/autocomplete?apiKey={API_KEY}&query={SearchInput}&number=5
+--> id, title
+
+## Ingredient Autocomplete (shows 5 matching results)
+{BASE_URL}/food/ingredients/autocomplete?apiKey={API_KEY}&query={Input}&number=5
+--> name, img, id, aisle, poss Units
+
+##Search Recipes with both of them combined (after hit enter)
+{BASE_URL}/recipes/complexSearch?apiKey={API_KEY}&query={SearchbarInputFinal}&includeIngredients={ingredients separated by commas}
+-->id, image, title (use this id in recipe card)
+
+##Get Random recipes (default homepage)
+{BASE_URL}/recipes/random?apiKey={API_KEY}
+
+##For Recipe Card (short)
+{BASE_URL}/recipes/{id}/information?apiKey={API_KEY}
+--> id, title, image, servings, readyInMinutes, preparationMinutes, cookingMinutes
+
+##For Full Recipe (complete)
+{BASE_URL}/recipes/{id}/information?apiKey={API_KEY}
+--> id, title, image, servings, readyInMinutes, preparationMinutes, cookingMinutes, ingredients(extendedIngredients-->amount,unit,name || (u can use simply) extendedIngredients-->originalName), 
+Instructions: {BASE_URL}/recipes/{id}/analyzedInstructions?apiKey=API_KEY
+--> steps--> number, step
