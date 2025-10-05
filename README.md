@@ -1,16 +1,22 @@
-# React + Vite
+# Recipe Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web application build with React and Vite.
 
-Currently, two official plugins are available:
+## Setup:
+1. Clone repository:
+   - `git clone https://github.com/Ishita-09-sahoo/recipe-book.git`
+   - Run this command in the terminal and then open it in your code editor 
+   - Or you can download the zip file from "https://github.com/Ishita-09-sahoo/recipe-book" and open it in code editor
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Install dependencies
+   - `npm install`
+   - Run this command in the project directory terminal
 
-## React Compiler
-
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Environment Variables
+   - Open the ".env" file.
+   - Go to the webiste as mentioned in the VITE_BASE_URL or click the link "https://api.spoonacular.com" and obtain your API key.
+   - Go to the ".env" and replace 'your_api_key' with the API key you obtained.
+  
+## Run the App:
+  - In the project directory open terminal and write the following command:
+  - `npm run dev`
