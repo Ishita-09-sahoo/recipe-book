@@ -6,7 +6,7 @@ import { Routes, Route, Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <div className="fixed top-0 h-16 w-full shadow-md">
+      <div className="fixed top-0 h-16 w-full shadow-md z-20">
         <div className="h-full w-full bg-amber-400 flex items-center justify-center">
           <div className="flex items-center justify-between w-[80%]">
             <div className="text-xl lg:text-2xl font-medium text-[#181A20]">
